@@ -1,18 +1,3 @@
-//
-//  main.cpp
-//  quine
-//
-//  Created by Georgi Popov on 6/27/13.
-//  Copyright (c) 2013 Georgi Popov. All rights reserved.
-//
-
-#include <iostream>
-
-int main(int argc, const char * argv[])
-{
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}
-
+#include <cstdio>
+char s[] = "#include <cstdio>%cchar s[] = %c%s%c%c%cint main(){std::printf(s,10, 34, s, 34, 59, 10);}";
+int main(){std::printf(s,10, 34, s, 34, 59, 10);}
